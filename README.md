@@ -21,3 +21,10 @@ Si les tests échouent, la pipeline est bloquée.
 - Node.js
 - Jest
 - GitLab CI/CD
+
+## More info
+
+J'ai appris à la fin de ce projet que c'était wordpress qu'il fallait 
+envoyé, ou python mais j'avais déjà fait ce projet donc il est la et pour le 
+wordpress il est dispo sur github ici : 
+https://github.com/Crolley/Wordpress-CI-CD
