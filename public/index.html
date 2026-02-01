@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summoner's Rift Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="title">⚔️ SUMMONER'S RIFT ⚔️</div>
+            <div class="subtitle">~ Minesweeper Edition ~</div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-label">💣 Teemo Shrooms</div>
+                <div class="stat-value" id="mines-count">10</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">⏱️ Time</div>
+                <div class="stat-value timer" id="timer">0:00</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">🏆 Best Time</div>
+                <div class="stat-value timer" id="best-time">--:--</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="difficulty-btn active" data-difficulty="easy">Bronze</button>
+            <button class="difficulty-btn" data-difficulty="medium">Gold</button>
+            <button class="difficulty-btn" data-difficulty="hard">Challenger</button>
+            <button class="action-btn" id="new-game">🔄 New Game</button>
+        </div>
+
+        <div style="text-align: center;">
+            <div class="board" id="board"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

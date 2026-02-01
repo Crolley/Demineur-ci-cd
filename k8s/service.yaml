@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demineur
+spec:
+  selector:
+    app: demineur
+  ports:
+    - port: 80
+      targetPort: 80
+  type: NodePort

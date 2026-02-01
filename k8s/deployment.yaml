@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demineur
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demineur
+  template:
+    metadata:
+      labels:
+        app: demineur
+    spec:
+      containers:
+        - name: demineur
+          image: demineur:latest
+          ports:
+            - containerPort: 80
